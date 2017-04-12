@@ -99,15 +99,18 @@ My final model consisted of the following layers:
 
 The code for training the model is located in the thirteenth cell of the ipython notebook. 
 
-To train the model, I used 20 epochs and a batch size of 128. Even though I used the udacity-carnd instance, a driver/API mismatch causes an issue and the GPU doesn't kick in. I had to keep my epoch level down and try to aim for good accuracy, so I just doubled the amount of epochs used in the LeNet Lab Solution. I kept the rest of the parameters equal, including the learning rate.
+To train the model, I used 12 epochs and a batch size of 128. My accuracy levels peak around the 5th epoch and level off at the 11th. Both batch size and learning rate parameters were left intact.
 
 #### 5. Describe the approach taken for finding a solution. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 The code for calculating the accuracy of the model is located in the fourteenth cell of the Ipython notebook. It's based entirely on the LeNet lab solution.
 
 My final model results were, without augmenting data:
-* validation set accuracy of max. 0.907
+* validation set accuracy of max. 0.97, final 0.
 * test set accuracy of 0.948 
+
+*(**NOTE**: I accidentally set a 0.5 keep_prob on the evaluate method, which was weighing down my results by at least 5 points).*
+*(**NOTE 2**: Even though I used the udacity-carnd AWS instance, a driver/API mismatch caused the GPU to not kick in. I'd like to fix this in order to have faster training times in the future).*
 
 ### Test a Model on New Images
 
@@ -153,13 +156,13 @@ The code for making predictions on my final model is located in the eighteenth c
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .53         			| Speed limit       							| 
+| .99         			| Speed limit       							| 
 | 1.00     				| General caution								|
 | 1.00					| Keep right									|
 | .99	      			| Speed limit					 				|
 | 1.00				    | Priority road      							|
 
-Although very accurate in cases 2, 3, 4 and 5, the model has lower confidence in the first sign (contrary to my initial thoughts).
+In all cases, the algorithm is very accurate, contrary to my initial thoughts about the general caution sign.
 
 ### Areas of improvement
 
