@@ -24,7 +24,7 @@ Run this ipython notebook with a compatible GPU in order to obtain faster traini
 
 Resolution
 ---
-Please review [my writeup](https://github.com/gtoran/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb) for resolution details and further information.
+Please review [my writeup](https://github.com/gtoran/CarND-Traffic-Sign-Classifier-Project/blob/master/writeup.md) for resolution details and further information.
 
 Others
 ---
