@@ -106,8 +106,8 @@ To train the model, I used 12 epochs and a batch size of 128. My accuracy levels
 The code for calculating the accuracy of the model is located in the fourteenth cell of the Ipython notebook. It's based entirely on the LeNet lab solution.
 
 My final model results were, without augmenting data:
-* validation set accuracy of max. 0.97, final 0.
-* test set accuracy of 0.948 
+* validation set accuracy of max. 0.97, final 0.93
+* test set accuracy of 0.964
 
 *(**NOTE**: I accidentally set a 0.5 keep_prob on the evaluate method, which was weighing down my results by at least 5 points).*
 *(**NOTE 2**: Even though I used the udacity-carnd AWS instance, a driver/API mismatch caused the GPU to not kick in. I'd like to fix this in order to have faster training times in the future).*
