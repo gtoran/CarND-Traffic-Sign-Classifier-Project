@@ -128,7 +128,7 @@ Here are five German traffic signs that I found on the web:
 
 ![Traffic Sign](https://gtoran.github.io/repository-assets/CarND-Traffic-Sign-Classifier-Project/other-traffic-signs/sign-5.png)
 
-My initial doubts concerned the second sign: the distortion and small size make me think it will throw it off and consider it something else, like the pedestrian crossing sign.
+My initial doubts concerned the general caution sign: the distortion and small size make me think it will throw it off and consider it something else, like the pedestrian crossing sign.
 
 ![Traffic Sign](https://gtoran.github.io/repository-assets/CarND-Traffic-Sign-Classifier-Project/pedestrian.png)
 
