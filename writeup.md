@@ -128,7 +128,9 @@ Here are five German traffic signs that I found on the web:
 
 ![Traffic Sign](https://gtoran.github.io/repository-assets/CarND-Traffic-Sign-Classifier-Project/other-traffic-signs/sign-5.png)
 
-My initial doubts concerned the second sign. There's something about that warning sign that makes me think it will throw it off and consider it something else.
+My initial doubts concerned the second sign: the distortion and small size make me think it will throw it off and consider it something else, like the pedestrian crossing sign.
+
+![Traffic Sign](https://gtoran.github.io/repository-assets/CarND-Traffic-Sign-Classifier-Project/pedestrian.png)
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
@@ -149,6 +151,8 @@ Here are the results of the prediction:
 | Priority road 		| Priority road      							|
 
 The model was able to correctly guess all traffic signs, providing complete accuracy. On a larger dataset I would expect to see some errors given the error rate.
+
+Compared to the test dataset, accuracy with these five images is higher (100%) than what we saw in the previous model (%96). Performance on new data is better than the training dataset, so fortunately it doesn't look like the model is overfitting (as in it's not "memorizing" training data instead of generalizing from trend).
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction and identify where in your code softmax probabilities were outputted. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
