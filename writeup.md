@@ -160,3 +160,7 @@ The code for making predictions on my final model is located in the eighteenth c
 | 1.00				    | Priority road      							|
 
 Although very accurate in cases 2, 3, 4 and 5, the model has lower confidence in the first sign (contrary to my initial thoughts).
+
+### Areas of improvement
+
+I would focus further development on improving the accuracy of the project by augmentating data. My initial thoughts on how to proceed have been laid out, but not implemented. To achieve this, I would create and append randomly up/downscaled, rotated and/or shifted versions of the images in the dataset. To ensure consistency, I would deprecate the validation dataset read that is carried out in the first code cell, and I would obtain a new one by shuffling and spliting the augmentated dataset. I'm estimate these changes to bring a 1-2% increase in accuracy, and presumably improve probability on the first sign mentioned above.
